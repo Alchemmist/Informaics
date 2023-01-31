@@ -1,9 +1,6 @@
 n = int(input())
-check = True
-while n > 0:
-    n -= 1
-    if n % 2 == 0 and n > 0:
-        print(2 ** n, end=' ')
-        check = False
-if check:
+n = n - n % 2
+for i in range(n, 0, -2):
+    print(2 ** i, end=' ')
+if n < 2:
     print(0)
