@@ -10,7 +10,7 @@ def is_perfect(n: int) -> bool:
         if n % del2 == 0:
             dels.append(del2)
 
-    if len(dels) > 0:
+    if len(dels) > 0 and sum(dels) + 1 == n:
         result = True
     return result
 
@@ -19,7 +19,7 @@ n = int(input())
 nothing = True
 for i in range(1, n + 1):
     if is_perfect(i):
-        print(i)
+        print(i, end=' ')
         nothing = False
 
 if nothing:
