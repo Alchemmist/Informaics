@@ -1,14 +1,17 @@
 n = int(input())
 dels = []
-nothing = True
-for i in range(1, int(n ** 0.5) + 1):
-    if n % i == 0:
-        dels.append(i)
-    if n % (i // n) == 0:
-        dels.append(i // n)
+for i in range(2, int(n ** 0.5) + 1):
+    del1= i #2
+    del2 = n // i #14
 
-if len(dels) > 1 and sum(dels) == n:
-    print(*dels)
+    if n % del1 == 0:
+        dels.append(del1)
+    if n % del2 == 0:
+        dels.append(del2)
+
+if len(dels) > 0 and sum(dels) + 1 == n:
+    dels.sort()
+    print(1, *dels)
 else:
     print(0)
 

@@ -1,7 +1,7 @@
-f1, f2 = 0, 1
 n = int(input())
-while f2 <= n:
-    f2 = f1 + f2
-    print(f1, end=' ')
-    f1 = f2
+a, b = 1, 1
+
+for i in range(1, n + 1):
+    print(a, end=' ')
+    a, b = b, a + b
 
