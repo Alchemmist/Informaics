@@ -6,6 +6,6 @@ random_nums = [random.randint(a, b) for _ in range(n)]
 print(*random_nums)
 count = 0
 for num in random_nums:
-    if len()
-            count += 1
-print(count)
+    if num % 2 == 0:
+        count += 1
+print(count, (len(random_nums) - count))
