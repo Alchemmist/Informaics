@@ -1,8 +1,17 @@
+count = 0
+result = []
+
 with open('input.txt', mode='r', encoding='utf-8') as file:
-    numbers = [i for i in map(int, file.readlines()) if i == numbers[-1] and i % 2 == 0]
+    n1 = file.readline().strip()
+    while n1:
+        n2 = file.readline().strip()
+        if n2 == n1:
+            count += 1
+        else:
+            result.append(count)
+            count = 0
+        n1 = n2
+
 
 with open('output.txt', mode='w', encoding='utf-8') as file:
-    if numbers:
-        file.write(f'{min(numbers)} {max(numbers)}')
-    else:
-        file.write(f'0')
+    file.write(f'{max(result) + 1}')
