@@ -1,6 +1,4 @@
-5
-Jack 4 Poodle
-Wenny 6 Laika
-Mary 3 Newfoundland
-Moon 12 Labrador
-Han 4 Terrier
+80
+Smith Jack 80
+Cormen Alex 92
+Mirabella Maria 78
