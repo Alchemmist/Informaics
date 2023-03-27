@@ -1,0 +1,6 @@
+a = input()
+changes = a.count('a') + a.count('A')
+a = a.replace('a', 'b')
+a = a.replace('A', 'B')
+print(a)
+print(changes)
